@@ -1,0 +1,16 @@
+# Data folders (too large for git)
+train/
+test/
+
+# Python virtual environment
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# CSV data files (optional - remove if you want these tracked)
+# labels.csv
+# sample_submission.csv
