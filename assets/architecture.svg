@@ -1,0 +1,154 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a2647;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="preprocGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d2465;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mobileGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="denseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e8449;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64b5f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="900" height="50" fill="url(#headerGrad)" rx="12"/>
+  <rect x="0" y="38" width="900" height="12" fill="url(#headerGrad)"/>
+  <text x="450" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700" letter-spacing="1">🐕 Dog Vision — ML Pipeline Architecture</text>
+
+  <!-- ===== Step 1: Input Image ===== -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="80" width="130" height="110" rx="10" fill="url(#inputGrad)" stroke="#64b5f6" stroke-width="1.5"/>
+  </g>
+  <text x="85" y="105" text-anchor="middle" fill="#64b5f6" font-size="11" font-weight="700">INPUT IMAGE</text>
+  <!-- Tiny dog pixel art placeholder -->
+  <rect x="45" y="112" width="80" height="55" rx="4" fill="#0a1929" stroke="#64b5f640" stroke-width="1"/>
+  <text x="85" y="142" text-anchor="middle" fill="#64b5f6" font-size="22">🐕</text>
+  <text x="85" y="175" text-anchor="middle" fill="#90caf9" font-size="9">Any resolution JPG/PNG</text>
+
+  <!-- Arrow 1 -->
+  <line x1="150" y1="135" x2="178" y2="135" stroke="#64b5f6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== Step 2: Preprocessing ===== -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="80" width="130" height="110" rx="10" fill="url(#preprocGrad)" stroke="#ce93d8" stroke-width="1.5"/>
+  </g>
+  <text x="245" y="105" text-anchor="middle" fill="#ce93d8" font-size="11" font-weight="700">PREPROCESSING</text>
+  <text x="245" y="124" text-anchor="middle" fill="#e1bee7" font-size="9">↳ Resize to 224×224</text>
+  <text x="245" y="138" text-anchor="middle" fill="#e1bee7" font-size="9">↳ Normalize [0, 1]</text>
+  <text x="245" y="152" text-anchor="middle" fill="#e1bee7" font-size="9">↳ Batch size: 32</text>
+  <text x="245" y="166" text-anchor="middle" fill="#e1bee7" font-size="9">↳ tf.data pipeline</text>
+  <text x="245" y="180" text-anchor="middle" fill="#b39ddb" font-size="9">Shape: (224, 224, 3)</text>
+
+  <!-- Arrow 2 -->
+  <line x1="310" y1="135" x2="338" y2="135" stroke="#64b5f6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== Step 3: MobileNetV2 ===== -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="68" width="210" height="135" rx="10" fill="url(#mobileGrad)" stroke="#ff8a80" stroke-width="1.5"/>
+  </g>
+  <text x="445" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="700">MobileNetV2</text>
+  <text x="445" y="109" text-anchor="middle" fill="#ffcdd2" font-size="9">Pre-trained on ImageNet (1.4M images)</text>
+  <!-- Mini layer diagram -->
+  <rect x="358" y="116" width="174" height="16" rx="3" fill="#c0392b80"/>
+  <text x="445" y="127" text-anchor="middle" fill="#ffcdd2" font-size="8">Depthwise Separable Convolutions (×16)</text>
+  <rect x="358" y="136" width="174" height="16" rx="3" fill="#c0392b80"/>
+  <text x="445" y="147" text-anchor="middle" fill="#ffcdd2" font-size="8">Inverted Residual Blocks</text>
+  <rect x="358" y="156" width="174" height="16" rx="3" fill="#e94560aa"/>
+  <text x="445" y="167" text-anchor="middle" fill="white" font-size="8" font-weight="600">Feature Vector: 1,280 dims 🔒 Frozen</text>
+  <text x="445" y="192" text-anchor="middle" fill="#ff8a80" font-size="9">Transfer Learning — weights frozen</text>
+
+  <!-- Arrow 3 -->
+  <line x1="550" y1="135" x2="578" y2="135" stroke="#64b5f6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== Step 4: Dense Layer ===== -->
+  <g filter="url(#shadow)">
+    <rect x="580" y="80" width="130" height="110" rx="10" fill="url(#denseGrad)" stroke="#ffcc02" stroke-width="1.5"/>
+  </g>
+  <text x="645" y="105" text-anchor="middle" fill="#1a1a1a" font-size="11" font-weight="700">DENSE LAYER</text>
+  <text x="645" y="122" text-anchor="middle" fill="#1a1a1a" font-size="9">120 neurons</text>
+  <text x="645" y="136" text-anchor="middle" fill="#1a1a1a" font-size="9">Softmax activation</text>
+  <text x="645" y="150" text-anchor="middle" fill="#1a1a1a" font-size="9">Adam optimizer</text>
+  <text x="645" y="164" text-anchor="middle" fill="#1a1a1a" font-size="9">Categorical XEntropy</text>
+  <text x="645" y="180" text-anchor="middle" fill="#1a1a1a" font-size="9">✅ Trainable weights</text>
+
+  <!-- Arrow 4 -->
+  <line x1="710" y1="135" x2="738" y2="135" stroke="#64b5f6" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== Step 5: Output ===== -->
+  <g filter="url(#shadow)">
+    <rect x="740" y="80" width="140" height="110" rx="10" fill="url(#outputGrad)" stroke="#a5d6a7" stroke-width="1.5"/>
+  </g>
+  <text x="810" y="105" text-anchor="middle" fill="white" font-size="11" font-weight="700">PREDICTIONS</text>
+  <text x="810" y="122" text-anchor="middle" fill="#c8e6c9" font-size="9">German Shepherd</text>
+  <rect x="755" y="127" width="110" height="8" rx="3" fill="#27ae6080"/>
+  <rect x="755" y="127" width="86" height="8" rx="3" fill="#2ecc71"/>
+  <text x="868" y="134" text-anchor="start" fill="#a5d6a7" font-size="8"> 78.3%</text>
+  <text x="810" y="148" text-anchor="middle" fill="#c8e6c9" font-size="9">Airedale</text>
+  <rect x="755" y="152" width="110" height="8" rx="3" fill="#27ae6040"/>
+  <rect x="755" y="152" width="14" height="8" rx="3" fill="#82c341"/>
+  <text x="868" y="159" text-anchor="start" fill="#a5d6a7" font-size="8"> 12.8%</text>
+  <text x="810" y="174" text-anchor="middle" fill="#c8e6c9" font-size="9">120 breed probabilities</text>
+  <text x="810" y="185" text-anchor="middle" fill="#a5d6a7" font-size="9">Softmax → sums to 1.0</text>
+
+  <!-- ===== Training Loop Annotation ===== -->
+  <rect x="20" y="230" width="860" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="253" text-anchor="middle" fill="#8b949e" font-size="11" font-weight="600">TRAINING STRATEGY</text>
+
+  <!-- Phase 1 -->
+  <rect x="40" y="262" width="380" height="36" rx="6" fill="#0d2137" stroke="#1f6feb" stroke-width="1"/>
+  <text x="230" y="276" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="600">⚡ Phase 1 — Rapid Experiment</text>
+  <text x="230" y="291" text-anchor="middle" fill="#8b949e" font-size="9">1,000 images · 800 train / 200 val · Pipeline validation</text>
+
+  <!-- Phase 2 -->
+  <rect x="460" y="262" width="400" height="36" rx="6" fill="#0d2b1a" stroke="#238636" stroke-width="1"/>
+  <text x="660" y="276" text-anchor="middle" fill="#56d364" font-size="10" font-weight="600">🚀 Phase 2 — Full Training</text>
+  <text x="660" y="291" text-anchor="middle" fill="#8b949e" font-size="9">10,222 images · 8,178 train / 2,044 val · EarlyStopping (patience=3)</text>
+
+  <!-- ===== Key Stats Bar ===== -->
+  <rect x="20" y="330" width="860" height="70" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+  <rect x="40" y="345" width="155" height="40" rx="6" fill="#0d2137"/>
+  <text x="117" y="362" text-anchor="middle" fill="#79c0ff" font-size="16" font-weight="700">10,222</text>
+  <text x="117" y="377" text-anchor="middle" fill="#8b949e" font-size="9">Training Images</text>
+
+  <rect x="210" y="345" width="155" height="40" rx="6" fill="#1b1b2e"/>
+  <text x="287" y="362" text-anchor="middle" fill="#ce93d8" font-size="16" font-weight="700">120</text>
+  <text x="287" y="377" text-anchor="middle" fill="#8b949e" font-size="9">Dog Breeds</text>
+
+  <rect x="380" y="345" width="155" height="40" rx="6" fill="#2b1d0e"/>
+  <text x="457" y="362" text-anchor="middle" fill="#ffa657" font-size="16" font-weight="700">224×224</text>
+  <text x="457" y="377" text-anchor="middle" fill="#8b949e" font-size="9">Input Resolution</text>
+
+  <rect x="550" y="345" width="155" height="40" rx="6" fill="#0d2b1a"/>
+  <text x="627" y="362" text-anchor="middle" fill="#56d364" font-size="16" font-weight="700">87.6%</text>
+  <text x="627" y="377" text-anchor="middle" fill="#8b949e" font-size="9">Mean Confidence</text>
+
+  <rect x="720" y="345" width="140" height="40" rx="6" fill="#2b0d0d"/>
+  <text x="790" y="362" text-anchor="middle" fill="#ff7b72" font-size="16" font-weight="700">78.3%</text>
+  <text x="790" y="377" text-anchor="middle" fill="#8b949e" font-size="9">🐕 GSD Prediction</text>
+</svg>

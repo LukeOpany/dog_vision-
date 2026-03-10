@@ -1,0 +1,140 @@
+<svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1f6feb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388bfd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gsdGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff7b72;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#238636;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#56d364;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="340" fill="url(#bgGrad)" rx="12"/>
+  <rect x="0" y="0" width="900" height="46" fill="#161b22" rx="12"/>
+  <rect x="0" y="34" width="900" height="12" fill="#161b22"/>
+
+  <!-- Title -->
+  <text x="450" y="29" text-anchor="middle" fill="white" font-size="16" font-weight="700">📊 Dataset Breed Distribution — Top 15 vs German Shepherd</text>
+
+  <!-- Y-axis label -->
+  <text x="16" y="200" text-anchor="middle" fill="#8b949e" font-size="10" transform="rotate(-90, 16, 200)">Images per Breed</text>
+
+  <!-- Grid lines -->
+  <line x1="65" y1="65" x2="880" y2="65" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="65" y1="100" x2="880" y2="100" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="65" y1="135" x2="880" y2="135" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="65" y1="170" x2="880" y2="170" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="65" y1="205" x2="880" y2="205" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="65" y1="240" x2="880" y2="240" stroke="#21262d" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Y-axis labels -->
+  <text x="58" y="69" text-anchor="end" fill="#8b949e" font-size="9">130</text>
+  <text x="58" y="104" text-anchor="end" fill="#8b949e" font-size="9">110</text>
+  <text x="58" y="139" text-anchor="end" fill="#8b949e" font-size="9">90</text>
+  <text x="58" y="174" text-anchor="end" fill="#8b949e" font-size="9">70</text>
+  <text x="58" y="209" text-anchor="end" fill="#8b949e" font-size="9">50</text>
+
+  <!-- Baseline -->
+  <line x1="65" y1="252" x2="880" y2="252" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Mean line -->
+  <line x1="65" y1="162" x2="880" y2="162" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="882" y="165" text-anchor="start" fill="#f39c12" font-size="9">mean=85</text>
+
+  <!-- Bars: width=48, gap=6 starting at x=70 -->
+  <!-- Each bar: height = (count / 130) * (252 - 65) = count * 1.438 -->
+  <!-- 1: scottish_deerhound: 126 -->
+  <rect x="70" y="71" width="48" height="181" rx="3" fill="url(#barGrad)"/>
+  <text x="94" y="63" text-anchor="middle" fill="#79c0ff" font-size="8">126</text>
+  <text x="94" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 94, 270)">scottish_deer...</text>
+
+  <!-- 2: maltese_dog: 117 -->
+  <rect x="124" y="84" width="48" height="168" rx="3" fill="url(#barGrad)"/>
+  <text x="148" y="76" text-anchor="middle" fill="#79c0ff" font-size="8">117</text>
+  <text x="148" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 148, 270)">maltese_dog</text>
+
+  <!-- 3: afghan_hound: 116 -->
+  <rect x="178" y="85" width="48" height="167" rx="3" fill="url(#barGrad)"/>
+  <text x="202" y="77" text-anchor="middle" fill="#79c0ff" font-size="8">116</text>
+  <text x="202" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 202, 270)">afghan_hound</text>
+
+  <!-- 4: entlebucher: 115 -->
+  <rect x="232" y="87" width="48" height="165" rx="3" fill="url(#barGrad)"/>
+  <text x="256" y="79" text-anchor="middle" fill="#79c0ff" font-size="8">115</text>
+  <text x="256" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 256, 270)">entlebucher</text>
+
+  <!-- 5: bernese: 114 -->
+  <rect x="286" y="88" width="48" height="164" rx="3" fill="url(#barGrad)"/>
+  <text x="310" y="80" text-anchor="middle" fill="#79c0ff" font-size="8">114</text>
+  <text x="310" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 310, 270)">bernese_mtn</text>
+
+  <!-- 6: shih-tzu: 112 -->
+  <rect x="340" y="91" width="48" height="161" rx="3" fill="url(#barGrad)"/>
+  <text x="364" y="83" text-anchor="middle" fill="#79c0ff" font-size="8">112</text>
+  <text x="364" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 364, 270)">shih-tzu</text>
+
+  <!-- 7: great_pyrenees: 111 -->
+  <rect x="394" y="92" width="48" height="160" rx="3" fill="url(#barGrad)"/>
+  <text x="418" y="84" text-anchor="middle" fill="#79c0ff" font-size="8">111</text>
+  <text x="418" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 418, 270)">great_pyrenees</text>
+
+  <!-- 8: pomeranian: 111 -->
+  <rect x="448" y="92" width="48" height="160" rx="3" fill="url(#barGrad)"/>
+  <text x="472" y="84" text-anchor="middle" fill="#79c0ff" font-size="8">111</text>
+  <text x="472" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 472, 270)">pomeranian</text>
+
+  <!-- 9: basenji: 110 -->
+  <rect x="502" y="94" width="48" height="158" rx="3" fill="url(#barGrad)"/>
+  <text x="526" y="86" text-anchor="middle" fill="#79c0ff" font-size="8">110</text>
+  <text x="526" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 526, 270)">basenji</text>
+
+  <!-- 10: samoyed: 109 -->
+  <rect x="556" y="95" width="48" height="157" rx="3" fill="url(#barGrad)"/>
+  <text x="580" y="87" text-anchor="middle" fill="#79c0ff" font-size="8">109</text>
+  <text x="580" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 580, 270)">samoyed</text>
+
+  <!-- 11: briard (min): 66 -->
+  <rect x="610" y="157" width="48" height="95" rx="3" fill="#30363d"/>
+  <text x="634" y="149" text-anchor="middle" fill="#8b949e" font-size="8">66</text>
+  <text x="634" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 634, 270)">briard (min)</text>
+
+  <!-- 12: eskimo_dog: 66 -->
+  <rect x="664" y="157" width="48" height="95" rx="3" fill="#30363d"/>
+  <text x="688" y="149" text-anchor="middle" fill="#8b949e" font-size="8">66</text>
+  <text x="688" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 688, 270)">eskimo_dog</text>
+
+  <!-- 13: golden_retriever: 67 -->
+  <rect x="718" y="156" width="48" height="96" rx="3" fill="#30363d"/>
+  <text x="742" y="148" text-anchor="middle" fill="#8b949e" font-size="8">67</text>
+  <text x="742" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 742, 270)">golden_retr.</text>
+
+  <!-- 14: german_shepherd: 69 — highlighted in red -->
+  <rect x="772" y="153" width="48" height="99" rx="3" fill="url(#gsdGrad)"/>
+  <text x="796" y="145" text-anchor="middle" fill="#ff7b72" font-size="9" font-weight="700">69 ⭐</text>
+  <text x="796" y="270" text-anchor="middle" fill="#ff7b72" font-size="8" font-weight="600" transform="rotate(-45, 796, 270)">german_shep.</text>
+
+  <!-- 15: ...remaining (represented as average) -->
+  <rect x="826" y="130" width="48" height="122" rx="3" fill="#21262d"/>
+  <text x="850" y="122" text-anchor="middle" fill="#8b949e" font-size="8">~85</text>
+  <text x="850" y="270" text-anchor="middle" fill="#8b949e" font-size="8" transform="rotate(-45, 850, 270)">avg. other</text>
+
+  <!-- Legend -->
+  <rect x="70" y="305" width="14" height="10" rx="2" fill="url(#barGrad)"/>
+  <text x="90" y="314" fill="#8b949e" font-size="10">Top breeds</text>
+  <rect x="200" y="305" width="14" height="10" rx="2" fill="url(#gsdGrad)"/>
+  <text x="220" y="314" fill="#ff7b72" font-size="10">German Shepherd (this project's hero!)</text>
+  <rect x="450" y="305" width="14" height="10" rx="2" fill="#30363d" stroke="#30363d"/>
+  <text x="470" y="314" fill="#8b949e" font-size="10">Lower-count breeds</text>
+  <line x1="630" y1="310" x2="660" y2="310" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="668" y="314" fill="#f39c12" font-size="10">Mean = 85.2 images/breed</text>
+</svg>
