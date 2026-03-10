@@ -8,8 +8,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
 [![Keras](https://img.shields.io/badge/Keras-Transfer%20Learning-d00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-f37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Competition-20beff?style=for-the-badge&logo=kaggle&logoColor=white)](https://kaggle.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
 
 <br/>
 
