@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐕 Dog Vision: AI-Powered Dog Breed Classifier
+# Dog Vision: AI-Powered Dog Breed Classifier 🐕
 
 ### *From a single photo to a confident prediction — across 120 breeds*
 
