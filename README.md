@@ -1,8 +1,8 @@
 <div align="center">
 
-# Dog Vision: AI-Powered Dog Breed Classifier 🐕
+# Dog Vision: Dog Breed Classifier 🐕
 
-### *From a single photo to a confident prediction — across 120 breeds*
+### *From a single photo to a confident prediction across 120 breeds*
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
@@ -22,9 +22,9 @@
 
 ## 🎬 The Story: A Problem Worth Solving
 
-You're out on a walk and a beautiful dog trots by. You wonder — *what breed is that?* Or you just adopted a rescue mix and you're curious what's in there. Dog breed identification has real-world applications ranging from **veterinary diagnostics** and **insurance classification** to **smart pet apps** and **automated shelter intake systems**.
+You're out on a walk and a beautiful dog trots by. You wonder *what breed is that?* Or you just adopted a rescue mix and you're curious what's in there. Dog breed identification has real-world applications ranging from **veterinary diagnostics** and **insurance classification** to **smart pet apps** and **automated shelter intake systems**.
 
-The challenge: **120 visually similar breeds**, subtle coat patterns, varying ages and lighting conditions, and images taken in the wild — not controlled studio settings. This is exactly the kind of problem where **deep learning shines**.
+The challenge: **120 visually similar breeds**, subtle coat patterns, varying ages and lighting conditions, and images taken in the wild; uncontrolled studio settings. This is exactly the kind of problem where **deep learning shines**.
 
 This project builds a production-grade, end-to-end image classification pipeline that can identify any of 120 dog breeds from a single photograph — including correctly identifying my own **German Shepherd puppy** from a backyard photo with **78.3% confidence**.
 
