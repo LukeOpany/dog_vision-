@@ -190,8 +190,3 @@ jupyter lab dog_vision.ipynb
 
 ---
 
-<div align="center">
-
-*Built with ❤️ and a lot of dog photos.*
-
-</div>
