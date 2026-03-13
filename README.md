@@ -188,11 +188,4 @@ jupyter lab dog_vision.ipynb
 | Overfitting early is OK | It confirmed the model was learning real patterns before full-data training |
 | Real-world photos are harder | The 78.3% GSD result is impressive given how different puppy photos are from training data |
 
----
-
-## 🔄 dbt Data Transformation Flow
-
-![dbt Data Transformation Flow](https://github.com/user-attachments/assets/11fd055b-ba50-4057-809d-77a4b5b02a29)
-
----
 
