@@ -15,7 +15,7 @@
 
 ---
 
-## 🗺️ The Big Picture
+## The Big Picture
 
 You hand the model a photo of any dog. It hands back a breed label and a confidence score. Simple idea — surprisingly hard problem.
 
@@ -29,7 +29,7 @@ The entire journey — from raw JPEG files to a live prediction on a personal ph
 
 ---
 
-## 📖 The Story
+## The Story
 
 ### Chapter 1 — The Data
 
@@ -40,7 +40,7 @@ The dataset comes from [Kaggle's Dog Breed Identification challenge](https://www
 | Training | 10,222 | 120 unique breeds |
 | Test | 10,357 | *(unlabelled — for submission)* |
 
-The label file (`labels.csv`) maps each image ID to a breed name. The first thing we did was check that every image in the folder had a matching label — and they all did ✅.
+The label file (`labels.csv`) maps each image ID to a breed name. The first thing we did was check that every image in the folder had a matching label; and they all did.
 
 <details>
 <summary><b>📊 Dataset Breed Distribution — Top 15 breeds</b></summary>
@@ -72,8 +72,8 @@ The result: a stream of `(224, 224, 3)` float32 tensors, ready for the model.
 
 Rather than spending weeks training a CNN from scratch, we used **Transfer Learning**:
 
-- 🔒 **Frozen backbone** — MobileNetV2 feature extractor (pre-trained on ImageNet, 1,280-dimensional output vector). Its weights are *not* updated during training.
-- ✅ **Trainable head** — a single `Dense(120, activation='softmax')` layer learns to map those 1,280 features to breed probabilities.
+- **Frozen backbone** — MobileNetV2 feature extractor (pre-trained on ImageNet, 1,280-dimensional output vector). Its weights are *not* updated during training.
+- **Trainable head** — a single `Dense(120, activation='softmax')` layer learns to map those 1,280 features to breed probabilities.
 
 <img width="903" height="450" alt="pipeline" src="https://github.com/user-attachments/assets/3280a26e-ad99-43ab-8904-de5c5762e902" />
 
@@ -130,14 +130,14 @@ The most honest evaluation of any model is running it on photos it has never see
 
 ---
 
-## 🎯 Highlight: German Shepherd — Correctly Identified
+## 🎯 Highlight: German Shepherd Correctly Identified
 
 `IMG_8554.jpg` is a personal photo of a German Shepherd puppy. The model had never seen this image. It returned:
 
 
 <img width="1285" height="382" alt="IMG_8554" src="https://github.com/user-attachments/assets/465105ad-a83d-4410-a924-ed3c91ff34cb" />
 
-> **✅ `german_shepherd` — 78.3% confidence**
+> **`german_shepherd` — 78.3% confidence**
 >
 > The runner-up breed (*airedale* at 12.8%) is a visually similar tan-and-black working dog — which makes intuitive sense. The remaining ~9% is spread across terrier-adjacent breeds. Despite the casual phone photo and the fact that German Shepherd puppies look quite different from the adult dogs in the training set, the model nailed it.
 
@@ -159,7 +159,7 @@ dog_vision-/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 # 1. Clone
@@ -181,7 +181,7 @@ jupyter lab dog_vision.ipynb
 
 ---
 
-## 🧠 Key Takeaways
+## Key Takeaways
 
 | Lesson | Detail |
 |---|---|
