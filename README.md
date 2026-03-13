@@ -75,7 +75,8 @@ Rather than spending weeks training a CNN from scratch, we used **Transfer Learn
 - 🔒 **Frozen backbone** — MobileNetV2 feature extractor (pre-trained on ImageNet, 1,280-dimensional output vector). Its weights are *not* updated during training.
 - ✅ **Trainable head** — a single `Dense(120, activation='softmax')` layer learns to map those 1,280 features to breed probabilities.
 
-![ML Pipeline Architecture](assets/architecture.svg)
+<img width="903" height="450" alt="pipeline" src="https://github.com/user-attachments/assets/3280a26e-ad99-43ab-8904-de5c5762e902" />
+
 
 <details>
 <summary><b>⚙️ Model config at a glance</b></summary>
