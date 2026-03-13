@@ -133,7 +133,8 @@ The most honest evaluation of any model is running it on photos it has never see
 
 `IMG_8554.jpg` is a personal photo of a German Shepherd puppy. The model had never seen this image. It returned:
 
-![German Shepherd Prediction](assets/german_shepherd_prediction.svg)
+
+<img width="1285" height="382" alt="IMG_8554" src="https://github.com/user-attachments/assets/465105ad-a83d-4410-a924-ed3c91ff34cb" />
 
 > **✅ `german_shepherd` — 78.3% confidence**
 >
