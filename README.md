@@ -124,13 +124,13 @@ test_predictions = full_model.predict(test_data, verbose=1)
 
 ---
 
-### Chapter 6 — The Real Test: My Own Dog 🐾
+### Chapter 6 — The Real Test: My Own Dog 
 
 The most honest evaluation of any model is running it on photos it has never seen from outside the original dataset. Four personal photos were fed in — and one came back with a confident, *correct* answer.
 
 ---
 
-## 🎯 Highlight: German Shepherd Correctly Identified
+## Highlight: German Shepherd Correctly Identified
 
 `IMG_8554.jpg` is a personal photo of a German Shepherd puppy. The model had never seen this image. It returned:
 
