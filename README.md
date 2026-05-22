@@ -6,11 +6,6 @@
 
 *A deep learning project that classifies **120 dog breeds** from photos using Transfer Learning with MobileNetV2.*
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square&logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=flat-square&logo=tensorflow)
-![Kaggle](https://img.shields.io/badge/Dataset-Kaggle%20Dog%20Breed-20beff?style=flat-square&logo=kaggle)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
-
 </div>
 
 ---
